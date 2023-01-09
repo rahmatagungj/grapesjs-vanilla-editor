@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <!-- cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/grapesjs/0.19.5/css/grapes.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/grapesjs/0.19.5/grapes.min.js"></script>
+    <script src="https://unpkg.com/grapesjs-blocks-basic"></script>
+    <script src="https://unpkg.com/grapesjs-plugin-forms"></script>
+    <script src="js/gjs.init.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/grapesjs-preset-webpage@1.0.2/dist/index.min.js"></script>
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+
+    <!-- custom -->
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/spectre.css/dist/spectre.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css"
+    />
+
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <script src="js/gjs.blocks.js"></script>
+    <script src="js/gjs.traits.js"></script>
+    <script src="js/gjs.components.js"></script>
+    <script src="js/gjs.commands.js"></script>
+    <script src="js/gjs.rte.js"></script>
+    <script src="js/custom.js"></script>
+  </head>
+  <body>
+    <div class="row" style="height: 100%">
+      <div id="style-manager" class="column" style="flex-basis: 500px">
+        <ul class="tab tab-block">
+          <li class="tab-item active" data-panel-type="content">
+            <a href="#">Content</a>
+          </li>
+          <li class="tab-item" data-panel-type="styles">
+            <a href="#">Styles</a>
+          </li>
+        </ul>
+        <div id="content" class="tab-content">
+          <div id="blocks"></div>
+        </div>
+        <div id="styles" class="tab-content" style="display: none">
+          <div id="selectors-container"></div>
+          <div id="traits-container"></div>
+          <div id="style-manager-container"></div>
+        </div>
+      </div>
+      <div class="column editor-clm">
+        <div id="gjs"></div>
+      </div>
+    </div>
+  </body>
+</html>
